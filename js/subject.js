@@ -21,8 +21,8 @@
   const sub2 = subject.subscribe(observer2);
   const sub3 = subject.subscribe(observer3);
 
-  btn.addEventListener('click', function(e){
+  setInterval(() => {
     count++;
     subject.next('hi there');
-  }, false)
+  }, 1500)
 })()

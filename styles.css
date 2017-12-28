@@ -28,10 +28,11 @@ header{
 .menu{
   padding: 0;
   display: block;
-  margin: 0 auto 20px;
+  margin: 0;
   text-align: center;
-
 }
+
+h1 ~ .menu{margin-top: 20px;}
 .menu li{
   list-style_ none;
   padding: 0 10px;
@@ -44,6 +45,7 @@ header{
   text-decoration: none;
   color: black;
   padding: 10px;
+  display: block;
 }
 
 .menu li a:hover{
@@ -52,7 +54,6 @@ header{
 
 .block{
   position: relative;
-  padding: 50px;
 }
 
 .schedulers{
@@ -124,15 +125,16 @@ h2{
   font-weight: normal;
 }
 
-.button{
-  display: block;
-  margin: 0 auto;
-  padding: 10px;
-  width: 100px;
-  background: #009688;
-  cursor: pointer;
-  color: white;
-  font-weight: bold;
-  text-align: center;
+@media screen and (max-width: 500px){
+  .creatures{
+    flex-direction: column;
+  }
+  .creatures li ~ li{margin-top: 20px;}
 
+  .menu{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu li ~ li {margin-top: 20px;}
 }
