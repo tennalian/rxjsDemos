@@ -136,5 +136,10 @@ h2{
     flex-direction: column;
   }
 
-  .menu li ~ li {margin-top: 20px;}
+  .menu li {
+    display: block;
+    width: 100%;
+  }
+
+  .menu li{margin-top: 20px;}
 }
